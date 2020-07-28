@@ -1,5 +1,5 @@
 <template>
-  <Wrapper>
+  <Wrapper id="technologies">
     <Heading>
       Latest Technologies
     </Heading>

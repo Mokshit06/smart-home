@@ -5,6 +5,12 @@ const Heading = styled.h1`
   font-size: 2.3rem;
 `;
 
+const SubHead = styled.h3`
+  font-size: 1.3rem;
+  color: #64646b;
+  font-weight: 500;
+`;
+
 const Wrapper = styled("div", { dark: Boolean })`
   padding: 8vh 0;
   display: flex;
@@ -28,4 +34,4 @@ const Body = styled.div`
   margin: 4vh auto;
 `;
 
-export { Heading, Wrapper, Body };
+export { Heading, Wrapper, Body, SubHead };

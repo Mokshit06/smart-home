@@ -3,7 +3,7 @@
     <div class="product-info">
       <div class="title">
         <h2 class="head">{{ head }}</h2>
-        <h3 class="sub">{{ subhead }}</h3>
+        <SubHead>{{ subhead }}</SubHead>
       </div>
       <p>
         {{ body }}
@@ -15,7 +15,12 @@
 </template>
 
 <script>
+import { SubHead } from "../shared";
+
 export default {
+  components: {
+    SubHead,
+  },
   props: {
     imagePath: String,
     head: String,
@@ -51,12 +56,6 @@ export default {
 .head {
   font-size: 1.6rem;
   font-weight: 600;
-}
-
-.sub {
-  font-size: 1.3rem;
-  color: #64646b;
-  font-weight: 500;
 }
 
 .product-info p {

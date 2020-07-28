@@ -1,5 +1,5 @@
 <template>
-  <Wrapper :dark="true">
+  <Wrapper id="features" :dark="true">
     <Heading>Features</Heading>
     <Body>
       <FeaturesList />

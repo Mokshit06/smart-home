@@ -7,10 +7,11 @@
     }"
   >
     <div class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">Technologies</a>
-      <a href="#">Products</a>
-      <a href="#">Home</a>
+      <a v-scroll-to="'#home'">Home</a>
+      <a v-scroll-to="'#about'">About</a>
+      <a v-scroll-to="'#technologies'">Technologies</a>
+      <a v-scroll-to="'#features'">Features</a>
+      <a v-scroll-to="'#contact'">Contact</a>
     </div>
   </div>
 </template>
@@ -38,13 +39,14 @@ export default {
 
 .nav-links {
   display: flex;
-  width: 32%;
+  width: 40%;
   align-items: center;
   justify-content: space-around;
 }
 
 .nav-links a {
   font-weight: 400;
+  cursor: pointer;
   text-decoration: none;
   font-size: 1.04rem;
   color: #f8f8f8;

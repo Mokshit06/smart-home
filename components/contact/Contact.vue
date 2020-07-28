@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="wrapper" id="contact">
     <div class="copyright">
       <h3>home bit &copy; 2020</h3>
     </div>
@@ -19,14 +19,7 @@
 </template>
 
 <script>
-import { Wrapper, Body } from "../shared";
-
-export default {
-  components: {
-    Wrapper,
-    Body,
-  },
-};
+export default {};
 </script>
 
 <style scoped>

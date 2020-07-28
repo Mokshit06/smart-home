@@ -8,7 +8,7 @@
       <About />
     </section>
     <section>
-      <Info />
+      <Technologies />
     </section>
     <section>
       <Features />

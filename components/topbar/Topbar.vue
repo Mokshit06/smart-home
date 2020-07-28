@@ -23,7 +23,7 @@ export default {
   methods: {
     handleScroll(e) {
       const topbarHeight = 72;
-      const bannerHeight = document.getElementById("header").clientHeight;
+      const bannerHeight = document.querySelector("#home").clientHeight;
       //console.log("bannerHeight", bannerHeight);
       const screenHeight = process.client ? window.innerHeight : 0;
       if (window.scrollY > topbarHeight && !this.scrolledDown) {

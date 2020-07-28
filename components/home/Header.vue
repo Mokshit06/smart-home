@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper" id="header">
+  <div class="wrapper" id="home">
     <div class="cover">
       <h1 class="heading">home bit</h1>
     </div>
