@@ -19,7 +19,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: 'Home Bit. The hub for Latest info about smart home technologies' }
     ],
     link: [
       { rel: 'icon',  href: '/logo.png' }
@@ -35,7 +35,8 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
-    '~/plugins/vue2-scrollspy.client.js'
+    '~/plugins/vue2-scrollspy.client.js',
+    '~/plugins/aos.client.js',
   ],
   /*
   ** Auto import components

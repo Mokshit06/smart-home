@@ -48,13 +48,6 @@ export default {};
   cursor: pointer;
 }
 
-.about,
-.explore {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
 .contact-head {
   color: #f8f8f8;
   font-size: 1.36rem;
@@ -75,4 +68,35 @@ export default {};
   width: 1px;
   background: #fff;
 } */
+
+@media (max-width: 950px) {
+  .wrapper {
+    width: 60%;
+  }
+}
+
+@media (max-width: 700px) {
+  .wrapper {
+    width: 70%;
+  }
+}
+
+@media (max-width: 580px) {
+  .wrapper {
+    width: 54%;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 0.93rem;
+  }
+
+  .about {
+    margin-bottom: 1.2rem;
+  }
+
+  .copy {
+    margin-top: 0.5rem;
+  }
+}
 </style>

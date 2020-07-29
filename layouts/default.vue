@@ -26,6 +26,10 @@ html {
   margin: 0;
 }
 
+div {
+  transition: all 300ms;
+}
+
 ::-webkit-scrollbar {
   width: 9px;
 }

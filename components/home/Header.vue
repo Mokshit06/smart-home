@@ -31,4 +31,10 @@ export default {};
   font-weight: 600;
   color: #f8f8f8;
 }
+
+@media (max-width: 650px) {
+  .wrapper {
+    height: 45vh;
+  }
+}
 </style>

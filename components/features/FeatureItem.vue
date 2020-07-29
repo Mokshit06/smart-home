@@ -1,5 +1,5 @@
 <template>
-  <div class="product-item">
+  <div class="product-item" data-aos="fade-up">
     <div class="product-info">
       <div class="title">
         <h2 class="head">{{ head }}</h2>
@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import { SubHead } from "../shared";
+import { SubHead } from "../shared/styled";
 
 export default {
   components: {
@@ -90,5 +90,53 @@ export default {
 .product-img {
   width: 43%;
   border-radius: 10px;
+}
+
+@media (max-width: 950px) {
+  .head {
+    font-size: 1.5rem;
+  }
+
+  .product-info p {
+    font-size: 1.01rem;
+  }
+
+  .message {
+    padding: 0.8rem 1.4rem;
+    font-size: 0.9rem;
+  }
+
+  .message::after {
+    border-width: 10px;
+    margin-top: -10px;
+  }
+}
+
+@media (max-width: 850px) {
+  .product-item {
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+
+  .product-item:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .product-item:nth-child(even) .product-info {
+    margin-top: 1.7rem;
+  }
+
+  .head {
+    font-size: 1.58rem;
+  }
+
+  .product-info {
+    width: 84%;
+    margin-bottom: 1.7rem;
+  }
+
+  .product-img {
+    width: 84%;
+  }
 }
 </style>

@@ -1,52 +1,61 @@
 <template>
   <Wrapper id="about" :dark="true">
     <Body>
-      <div class="about-img"></div>
-      <div class="about-info">
-        <h1 class="head">Make your home just like yourself</h1>
-        <SubHead :style="{ 'margin-bottom': '0.8rem' }"
-          >...or maybe even smarter?</SubHead
-        >
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni,
-          eligendi nobis similique quaerat libero quae accusantium, excepturi
-          dolorum nulla nostrum nemo cupiditate consequuntur saepe consequatur
-          cumque! Officiis in fugiat, molestiae cumque id sequi asperiores.
-          Ipsum nisi quam velit repudiandae aspernatur excepturi labore, quidem
-          officia illum libero quis exercitationem minus totam.
-        </p>
+      <div class="about-body">
+        <div class="about-img"></div>
+        <Info />
       </div>
     </Body>
   </Wrapper>
 </template>
 
 <script>
-import { Wrapper, Body, SubHead } from "../shared";
+import { Wrapper, Body } from "../shared/styled";
+import Info from "./Info.vue";
 
 export default {
   components: {
     Wrapper,
     Body,
-    SubHead,
+    Info,
   },
 };
 </script>
 
 <style scoped>
-.about-info {
-  width: 47%;
-}
-
-.head {
-  font-size: 1.7rem;
-}
-
 .about-img {
   background-image: url("/about/home.jpg");
   background-position: center;
-  background-size: contain;
-  padding-top: 35.5%;
-  width: 40%;
+  background-size: cover;
+  padding-top: 30.2%;
+  width: 38%;
   background-repeat: no-repeat;
+}
+
+.about-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 910px) {
+  .about-body {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .about-img {
+    width: 100%;
+    padding-top: 58%;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 660px) {
+  .about-body {
+    width: 90%;
+  }
 }
 </style>

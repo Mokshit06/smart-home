@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import { Body, Wrapper, Heading } from "../shared";
+import { Body, Wrapper, Heading } from "../shared/styled";
 export default {
   components: {
     Body,

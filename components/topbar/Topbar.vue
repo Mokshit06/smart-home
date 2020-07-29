@@ -66,4 +66,10 @@ export default {
 .scrolledOverBanner {
   background: #060607;
 }
+
+@media (max-width: 650px) {
+  .nav {
+    display: none;
+  }
+}
 </style>

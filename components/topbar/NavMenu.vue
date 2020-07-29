@@ -1,5 +1,5 @@
 <template>
-  <div class="nav-links" v-scroll-spy-active v-scoll-spy-link>
+  <div class="nav-links" v-scroll-spy-active>
     <a v-scroll-to="'#home'">Home</a>
     <a v-scroll-to="'#about'">About</a>
     <a v-scroll-to="'#technologies'">Technologies</a>
@@ -27,11 +27,17 @@ export default {};
   font-size: 1.04rem;
   color: #f8f8f8;
   letter-spacing: 0.5px;
-  transition: color weight 300ms;
+  transition: all 450ms;
 }
 
 .nav-links a.active {
   color: #9595ff;
   font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  .nav-links a {
+    font-size: 1rem;
+  }
 }
 </style>

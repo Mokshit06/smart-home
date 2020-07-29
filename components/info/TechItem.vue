@@ -1,5 +1,5 @@
 <template>
-  <div class="item">
+  <div class="item" data-aos="fade-up">
     <div
       class="item-img"
       :style="{ 'background-image': `url(/${imagePath})` }"
@@ -10,7 +10,7 @@
     </div>
   </div>
 </template>
-
+-
 <script>
 export default {
   props: {

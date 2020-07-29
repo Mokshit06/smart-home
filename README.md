@@ -1,4 +1,6 @@
-# ai-website
+# Home Bit (Smart Home)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/73bb26f9-f03f-4c63-ab86-b5582cc6e111/deploy-status)](https://app.netlify.com/sites/home-bit/deploys)
 
 ## Build Setup
 

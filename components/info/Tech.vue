@@ -38,4 +38,16 @@ export default {};
   gap: 1.2rem;
   align-items: flex-start;
 }
+
+@media (max-width: 900px) {
+  .tech {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 660px) {
+  .tech {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
