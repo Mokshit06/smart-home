@@ -1,20 +1,23 @@
 <template>
   <div class="wrapper" id="contact">
-    <div class="copyright">
-      <h3>home bit &copy; 2020</h3>
+    <div class="about">
+      <h3 class="contact-head">About</h3>
+      <p>Made with ❤ by Mokshit Jain</p>
+      <p>Montfort School</p>
+      <p class="copy">&copy; home bit 2020</p>
     </div>
-    <div>
+    <!-- <div class="line"></div> -->
+    <div class="explore">
       <div>
-        <h3 :style="{ 'margin-bottom': '5px' }">Explore</h3>
+        <h3 class="contact-head">Explore</h3>
         <div class="links">
-          <a href="">Home</a>
-          <a href="">About</a>
-          <a href="">Technologies</a>
-          <a href="">Products</a>
+          <a v-scroll-to="'#home'">Home</a>
+          <a v-scroll-to="'#about'">About</a>
+          <a v-scroll-to="'#technologies'">Technologies</a>
+          <a v-scroll-to="'#features'">Features</a>
         </div>
       </div>
     </div>
-    <h3 class="made-by">Made with ❤ by Mokshit Jain</h3>
   </div>
 </template>
 
@@ -24,40 +27,52 @@ export default {};
 
 <style scoped>
 .wrapper {
-  align-content: center;
   height: 35vh;
-  display: grid;
-  width: 70%;
+  display: flex;
+  width: 45%;
+  align-items: center;
+  justify-content: space-between;
   margin: 0 auto;
-  color: #f8f8f8;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 4rem 1rem;
+  color: #ffffffa8;
+  font-size: 0.97rem;
 }
 
 .links {
   display: flex;
   flex-direction: column;
+  line-height: 1.7;
 }
 
 .links a {
   text-decoration: none;
-  color: #8d8d8d;
+  cursor: pointer;
 }
 
-.made-by {
-  grid-column: 1 / 3;
-  font-weight: 500;
-  font-size: 1.2rem;
-}
-
-.wrapper > div,
-.made-by {
+.about,
+.explore {
   display: flex;
-  align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
-.copyright {
-  border-right: 1px solid #a5a5a5;
+.contact-head {
+  color: #f8f8f8;
+  font-size: 1.36rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
 }
+
+.about p {
+  line-height: 1.7;
+}
+
+.copy {
+  margin-top: 1rem;
+}
+
+/* .line {
+  height: 50%;
+  width: 1px;
+  background: #fff;
+} */
 </style>

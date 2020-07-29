@@ -1,9 +1,14 @@
 <template>
   <div>
-    <NavMenu
-      :scrolledDown="scrolledDown"
-      :scrolledOverBanner="scrolledOverBanner"
-    />
+    <div
+      class="nav"
+      :class="{
+        scrolledDown: scrolledDown,
+        scrolledOverBanner: scrolledOverBanner,
+      }"
+    >
+      <NavMenu />
+    </div>
   </div>
 </template>
 
@@ -24,7 +29,6 @@ export default {
     handleScroll(e) {
       const topbarHeight = 72;
       const bannerHeight = document.querySelector("#home").clientHeight;
-      //console.log("bannerHeight", bannerHeight);
       const screenHeight = process.client ? window.innerHeight : 0;
       if (window.scrollY > topbarHeight && !this.scrolledDown) {
         this.scrolledDown = true;
@@ -44,4 +48,22 @@ export default {
 </script>
 
 <style>
+.nav {
+  transition: background 400ms;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  min-height: 7vh;
+  z-index: 10;
+}
+
+.scrolledDown {
+  background: #0e0e0e;
+}
+
+.scrolledOverBanner {
+  background: #060607;
+}
 </style>

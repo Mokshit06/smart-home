@@ -35,6 +35,7 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
+    '~/plugins/vue2-scrollspy.client.js'
   ],
   /*
   ** Auto import components

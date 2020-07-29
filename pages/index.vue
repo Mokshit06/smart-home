@@ -1,21 +1,23 @@
 <template>
   <div>
     <Topbar />
-    <section>
-      <Header />
-    </section>
-    <section>
-      <About />
-    </section>
-    <section>
-      <Technologies />
-    </section>
-    <section>
-      <Features />
-    </section>
-    <section>
-      <Contact />
-    </section>
+    <div v-scroll-spy="{ offset: 10 }">
+      <section>
+        <Header />
+      </section>
+      <section>
+        <About />
+      </section>
+      <section>
+        <Technologies />
+      </section>
+      <section>
+        <Features />
+      </section>
+      <section>
+        <Contact />
+      </section>
+    </div>
   </div>
 </template>
 
