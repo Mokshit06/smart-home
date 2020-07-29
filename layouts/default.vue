@@ -26,6 +26,18 @@ html {
   margin: 0;
 }
 
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8f8f8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7a7aff;
+}
+
 body {
   background: #111111;
 }
