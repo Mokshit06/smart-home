@@ -42,7 +42,7 @@ export default {
 }
 
 .about-img {
-  background-image: url("/home.jpg");
+  background-image: url("/about/home.jpg");
   background-position: center;
   background-size: contain;
   padding-top: 35.5%;
