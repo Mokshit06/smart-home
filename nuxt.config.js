@@ -22,7 +22,8 @@ export default {
       { hid: 'description', name: 'description', content: 'Home Bit. The hub for Latest info about smart home technologies' }
     ],
     link: [
-      { rel: 'icon',  href: '/logo.png' }
+      { rel: 'icon',  href: '/logo.png' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap' }
     ]
   },
   /*

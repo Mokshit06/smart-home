@@ -1,5 +1,10 @@
 <template>
-  <div class="item" data-aos="fade-up">
+  <div
+    class="item"
+    data-aos="fade-up"
+    data-aos-duration="700"
+    data-aos-delay="300"
+  >
     <div
       class="item-img"
       :style="{ 'background-image': `url(/${imagePath})` }"
@@ -31,6 +36,12 @@ export default {
   background: #1d1d1d;
   box-shadow: #00000033 0px 5px 30px -15px;
   padding: 0.6rem;
+  cursor: pointer;
+  transition: all 300ms ease-in-out !important;
+}
+
+.item:hover {
+  transform: scale(1.024);
 }
 
 .item h2 {

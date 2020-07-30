@@ -1,6 +1,7 @@
 <template>
   <div class="tech">
     <TechItem
+      v-scroll-to="'#speech'"
       imagePath="tech/assistant-2.jpg"
       head="Speech Recognition"
       para="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi,
@@ -9,6 +10,7 @@
           provident exercitationem doloribus dolorum."
     />
     <TechItem
+      v-scroll-to="'#security'"
       imagePath="tech/security.jpg"
       head="Home Security"
       para="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi,
@@ -17,6 +19,7 @@
           provident exercitationem doloribus dolorum."
     />
     <TechItem
+      v-scroll-to="'#light'"
       imagePath="tech/light.jpg"
       head="Smart Lights"
       para="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi,

@@ -34,6 +34,7 @@ export default {
 .head {
   font-size: 1.65rem;
   font-weight: 600;
+  color: #f8f8f8;
 }
 
 .about-info p {

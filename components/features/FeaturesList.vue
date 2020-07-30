@@ -1,6 +1,7 @@
 <template>
   <div class="products">
     <FeatureItem
+      id="speech"
       imagePath="features/assistant.jpg"
       head="Voice control your music"
       subhead="Speech Recognition"
@@ -13,12 +14,14 @@
       message="Hey Google! what song is this?"
     />
     <FeatureItem
+      id="security"
       imagePath="features/security-cover.jpg"
       head="See your home from your phone"
       subhead="Home Security"
       body="You can't always be watching your video feed. Nest Cam looks for motion and listens for conspicuous sounds, and if Nest Cam thinks something's up, it'll send a phone alert or an email with an image.Each Nest camera comes with a 30-day free trial of Nest Aware. Subscriptions start at just 6 a month for all your Nest cameras, speakers, and displays, including the Nest Hello video doorbell."
     />
     <FeatureItem
+      id="light"
       imagePath="features/light-cover.jpg"
       head="Ambiance Lighting for your house"
       subhead="Smart Lights"

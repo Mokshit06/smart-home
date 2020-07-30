@@ -5,7 +5,7 @@
 </template>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"); */
 
 html {
   font-family: "Poppins", sans-serif;
@@ -16,6 +16,8 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 *,
@@ -26,9 +28,9 @@ html {
   margin: 0;
 }
 
-div {
+/* div {
   transition: all 300ms;
-}
+} */
 
 ::-webkit-scrollbar {
   width: 9px;

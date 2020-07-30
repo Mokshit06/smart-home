@@ -1,6 +1,6 @@
 <template>
   <Wrapper id="technologies">
-    <Heading>
+    <Heading data-aos="fade-down">
       Latest Technologies
     </Heading>
     <Body>

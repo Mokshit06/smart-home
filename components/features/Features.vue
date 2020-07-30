@@ -1,6 +1,6 @@
 <template>
   <Wrapper id="features" :dark="true">
-    <Heading>Features</Heading>
+    <Heading data-aos="fade-down">Features</Heading>
     <Body>
       <FeaturesList />
     </Body>

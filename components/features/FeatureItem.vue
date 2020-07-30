@@ -1,6 +1,11 @@
 <template>
-  <div class="product-item" data-aos="fade-up">
-    <div class="product-info">
+  <div
+    class="feature-item"
+    data-aos="fade-up"
+    data-aos-duration="700"
+    data-aos-delay="300"
+  >
+    <div class="feature-info">
       <div class="title">
         <h2 class="head">{{ head }}</h2>
         <SubHead>{{ subhead }}</SubHead>
@@ -10,7 +15,7 @@
       </p>
       <div class="message" v-if="message">"{{ message }}"</div>
     </div>
-    <Card :imagePath="'/' + imagePath" class="product-img" />
+    <Card :imagePath="'/' + imagePath" class="feature-img" />
   </div>
 </template>
 
@@ -32,18 +37,18 @@ export default {
 </script>
 
 <style scoped>
-.product-item {
+.feature-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 5rem;
 }
 
-.product-item:nth-child(even) {
+.feature-item:nth-child(even) {
   flex-direction: row-reverse;
 }
 
-.product-info {
+.feature-info {
   width: 50%;
 }
 
@@ -58,7 +63,7 @@ export default {
   font-weight: 600;
 }
 
-.product-info p {
+.feature-info p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
   font-size: 1.03rem;
@@ -87,7 +92,7 @@ export default {
   border-color: transparent #28282c transparent transparent;
 }
 
-.product-img {
+.feature-img {
   width: 43%;
   border-radius: 10px;
 }
@@ -97,7 +102,7 @@ export default {
     font-size: 1.5rem;
   }
 
-  .product-info p {
+  .feature-info p {
     font-size: 1.01rem;
   }
 
@@ -113,16 +118,16 @@ export default {
 }
 
 @media (max-width: 850px) {
-  .product-item {
+  .feature-item {
     flex-direction: column;
     margin-bottom: 3rem;
   }
 
-  .product-item:nth-child(even) {
+  .feature-item:nth-child(even) {
     flex-direction: column;
   }
 
-  .product-item:nth-child(even) .product-info {
+  .feature-item:nth-child(even) .feature-info {
     margin-top: 1.7rem;
   }
 
@@ -130,12 +135,12 @@ export default {
     font-size: 1.58rem;
   }
 
-  .product-info {
+  .feature-info {
     width: 84%;
     margin-bottom: 1.7rem;
   }
 
-  .product-img {
+  .feature-img {
     width: 84%;
   }
 }
