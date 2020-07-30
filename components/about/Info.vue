@@ -5,13 +5,13 @@
       ...or maybe even smarter?
     </SubHead>
     <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, eligendi
-      nobis similique quaerat libero quae accusantium, excepturi dolorum nulla
-      nostrum nemo cupiditate consequuntur saepe consequatur cumque! Officiis in
-      fugiat, molestiae cumque id sequi asperiores. Ipsum nisi quam velit
-      repudiandae aspernatur excepturi labore, quidem officia illum libero quis
-      exercitationem minus totam.Lorem ipsum dolor sit, amet consectetur
-      adipisicing.
+      Home Bit is the best place for you to search for Smart Home products. Our
+      devices and softwares are made with User Experience in mind. We use
+      Artificial Intelligence to make the User Experience smoother and do some
+      things which, well... seem magical. Our products vary from Virtual
+      Assistants to smart speakers and from Smart lights to Home security
+      devices. We have excellent customer support and a 30 day trial period. We
+      can assure you that you wouldn't be left usurprised.
     </p>
   </div>
 </template>

@@ -4,7 +4,7 @@
       Latest Technologies
     </Heading>
     <Body>
-      <Tech />
+      <TechList />
     </Body>
   </Wrapper>
 </template>
